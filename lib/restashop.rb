@@ -56,13 +56,12 @@ class Restashop
                                            display: 'full' })
                             .body
       JSON.parse(json)[@resource].map do |r|
-        constantize(singularize(@resource.capitalize))
-          .new(@api, @resource, r['id'], r)
+        resource_class.new(@api, @resource, r['id'], r)
       end
     end
 
     def find(id)
-      constantize(singularize(@resource.capitalize)).new(@api, @resource, id)
+      resource_class.new(@api, @resource, id)
     end
 
     def list
@@ -76,6 +75,10 @@ class Restashop
 
     def count
       list.count
+    end
+
+    def resource_class
+      constantize(singularize(@resource.capitalize))
     end
   end
 
