@@ -108,5 +108,27 @@ RSpec.describe Restashop do
       expect(supplier.class).to eq Supplier
       expect(supplier.name).to eq 'Super supplier'
     end
+
+    it 'show a resource keys' do
+      stub_request(:get, 'http://prestashop.com/api?output_format=JSON')
+        .with(headers: {
+                'Accept' => '*/*'
+              })
+        .to_return(status: 200, body: '[ "suppliers" ]', headers: {})
+
+      stub_request(:get, 'http://prestashop.com/api/suppliers/42?output_format=JSON')
+        .with(headers: {
+                'Accept' => '*/*'
+              })
+        .to_return(status: 200,
+                   body: '{"supplier":{"id":42, "name":"Super supplier"}}',
+                   headers: {})
+      restashop = Restashop.new(URI.parse('http://prestashop.com/api').to_s,
+                                user: 'XXX')
+      supplier = restashop.suppliers.find(42)
+      expect(supplier.keys.count).to eq 2
+      expect(supplier.keys).to include 'id'
+      expect(supplier.keys).to include 'name'
+    end
   end
 end
