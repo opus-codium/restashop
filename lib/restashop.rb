@@ -25,8 +25,7 @@ class Restashop
     end
 
     def content
-      fetch if @content.empty?
-      @content
+      @content ||= fetch
     end
 
     def keys
