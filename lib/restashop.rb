@@ -29,8 +29,7 @@ class Restashop
     end
 
     def keys
-      fetch if @content.empty?
-      @content.keys
+      content.keys
     end
 
     def method_missing(name)
