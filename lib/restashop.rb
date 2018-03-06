@@ -19,9 +19,10 @@ class Restashop
     end
 
     def fetch
-      @content = JSON.parse(@api["#{@resource}/#{@id}"]
-                     .get(params: { output_format: 'JSON' })
-                     .body)[singularize(@resource)]
+      json = @api["#{@resource}/#{@id}"]
+             .get(params: { output_format: 'JSON' })
+             .body
+      @content = JSON.parse(json)[singularize(@resource)]
     end
 
     def content
@@ -52,9 +53,10 @@ class Restashop
 
     def all
       resources = []
-      JSON.parse(@api[@resource].get(params: { output_format: 'JSON',
-                                               display: 'full' })
-          .body)[@resource].each do |r|
+      json = @api[@resource].get(params: { output_format: 'JSON',
+                                           display: 'full' })
+                            .body
+      JSON.parse(json)[@resource].each do |r|
         resources.push constantize(singularize(@resource.capitalize))
           .new(@api, @resource, r['id'], r)
       end
@@ -67,8 +69,9 @@ class Restashop
 
     def list
       ids = []
-      JSON.parse(@api[@resource].get(params: { output_format: 'JSON' })
-           .body)[@resource]
+      json = @api[@resource].get(params: { output_format: 'JSON' })
+                            .body
+      JSON.parse(json)[@resource]
           .each { |i| ids.push i['id'] }
       ids
     end
@@ -92,8 +95,8 @@ class Restashop
   end
 
   def resources
-    r = @client.get(params: { output_format: 'JSON' }).body
-    JSON.parse(r)
+    json = @client.get(params: { output_format: 'JSON' }).body
+    JSON.parse(json)
   end
 
   def create_klass(klass, superklass)
