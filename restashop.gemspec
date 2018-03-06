@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['romuald@opus-labs.fr']
 
   spec.summary       = 'PrestaShop API client'
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/opus-codium/restashop'
   spec.license       = 'BSD-3-Clause'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
