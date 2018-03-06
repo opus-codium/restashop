@@ -52,15 +52,13 @@ class Restashop
     end
 
     def all
-      resources = []
       json = @api[@resource].get(params: { output_format: 'JSON',
                                            display: 'full' })
                             .body
-      JSON.parse(json)[@resource].each do |r|
-        resources.push constantize(singularize(@resource.capitalize))
+      JSON.parse(json)[@resource].map do |r|
+        constantize(singularize(@resource.capitalize))
           .new(@api, @resource, r['id'], r)
       end
-      resources
     end
 
     def find(id)
