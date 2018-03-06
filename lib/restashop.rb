@@ -11,7 +11,7 @@ class Restashop
     include ActiveSupport::Inflector
     attr_reader :id
 
-    def initialize(api, resource, id, content = {})
+    def initialize(api, resource, id, content = nil)
       @api = api
       @resource = resource
       @id = id
@@ -34,8 +34,7 @@ class Restashop
     end
 
     def method_missing(name)
-      fetch if @content.empty?
-      @content[name.to_s] || super
+      content[name.to_s] || super
     end
 
     def respond_to_missing?(name, include_private = false)
