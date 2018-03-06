@@ -88,8 +88,8 @@ class Restashop
     @client = RestClient::Resource.new url, user: key, password: ''
     resources.each do |r|
       define_singleton_method r.to_sym do
-        create_resource_klass(singularize(r.capitalize))
-        create_resource_collection_klass(r.capitalize)
+        create_resource_class(singularize(r.capitalize))
+        create_resource_collection_class(r.capitalize)
         constantize(r.capitalize).new(@client, r)
       end
     end
@@ -100,7 +100,7 @@ class Restashop
     JSON.parse(json)
   end
 
-  def create_klass(klass, superklass)
+  def find_or_create_class(klass, superklass)
     if Object.const_defined?(klass)
       Object.const_get(klass)
     else
@@ -108,11 +108,11 @@ class Restashop
     end
   end
 
-  def create_resource_klass(klass)
-    create_klass klass, Resource
+  def create_resource_class(klass)
+    find_or_create_class klass, Resource
   end
 
-  def create_resource_collection_klass(klass)
-    create_klass klass, ResourceCollection
+  def create_resource_collection_class(klass)
+    find_or_create_class klass, ResourceCollection
   end
 end
