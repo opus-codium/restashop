@@ -98,11 +98,19 @@ class Restashop
     JSON.parse(r)
   end
 
+  def create_klass(klass, superklass)
+    if Object.const_defined?(klass)
+      Object.const_get(klass)
+    else
+      Object.const_set(klass, Class.new(superklass))
+    end
+  end
+
   def create_resource_klass(klass)
-    Object.const_set klass, Class.new(Resource)
+    create_klass klass, Resource
   end
 
   def create_resource_collection_klass(klass)
-    Object.const_set klass, Class.new(ResourceCollection)
+    create_klass klass, ResourceCollection
   end
 end
