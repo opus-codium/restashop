@@ -6,13 +6,15 @@ require 'active_support/inflector/methods'
 # PrestaShop API accessor
 class Restashop
   include ActiveSupport::Inflector
+  attr_reader :client
   # Generic resource
   class Resource
     include ActiveSupport::Inflector
     attr_reader :id
 
-    def initialize(api, resource, id, content = nil)
-      @api = api
+    def initialize(restashop, resource, id, content = nil)
+      @restashop = restashop
+      @api = restashop.client
       @resource = resource
       @id = id
       @content = content
@@ -45,8 +47,9 @@ class Restashop
   # Generic resource collection
   class ResourceCollection
     include ActiveSupport::Inflector
-    def initialize(api, resource)
-      @api = api
+    def initialize(restashop, resource)
+      @restashop = restashop
+      @api = restashop.client
       @resource = resource
     end
 
@@ -55,12 +58,12 @@ class Restashop
                                            display: 'full' })
                             .body
       JSON.parse(json)[@resource].map do |r|
-        resource_class.new(@api, @resource, r['id'], r)
+        resource_class.new(@restashop, @resource, r['id'], r)
       end
     end
 
     def find(id)
-      resource_class.new(@api, @resource, id)
+      resource_class.new(@restashop, @resource, id)
     end
 
     def list
@@ -89,7 +92,7 @@ class Restashop
       define_singleton_method r.to_sym do
         create_resource_class(singularize(r.capitalize))
         create_resource_collection_class(r.capitalize)
-        constantize(r.capitalize).new(@client, r)
+        constantize(r.capitalize).new(self, r)
       end
     end
   end
