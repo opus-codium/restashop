@@ -67,12 +67,10 @@ class Restashop
     end
 
     def list
-      ids = []
       json = @api[@resource].get(params: { output_format: 'JSON' })
                             .body
       JSON.parse(json)[@resource]
-          .each { |i| ids.push i['id'] }
-      ids
+          .map { |i| i['id'] }
     end
 
     def count
