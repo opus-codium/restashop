@@ -1,29 +1,27 @@
 require 'restashop'
 
+def stub_prestashop_resources
+  json = File.read(File.expand_path('api.json', __dir__))
+  stub_request(:get, 'http://prestashop.com/api?output_format=JSON')
+    .with(headers: {
+            'Accept' => '*/*'
+          })
+    .to_return(status: 200, body: json, headers: {})
+end
+
 RSpec.describe Restashop do
   context 'with fully working setup' do
     it 'fetch resources and provide associated symbols' do
-      stub_request(:get, 'http://prestashop.com/api?output_format=JSON')
-        .with(headers: {
-                'Accept' => '*/*'
-              })
-        .to_return(status: 200, body: '[ "shops" ]', headers: {})
-
+      stub_prestashop_resources
       restashop = Restashop.new(URI.parse('http://prestashop.com/api').to_s,
                                 user: 'XXX')
 
-      expect(restashop.resources).to eq ['shops']
+      expect(restashop.resources).to include 'shops'
       expect(restashop.shops.class).to eq Shops
     end
 
     it 'list resource IDs' do
-      stub_request(:get, 'http://prestashop.com/api?output_format=JSON')
-        .with(headers: {
-                'Accept' => '*/*'
-              })
-        .to_return(status: 200,
-                   body: '[ "suppliers" ]', headers: {})
-
+      stub_prestashop_resources
       stub_request(:get, 'http://prestashop.com/api/suppliers?output_format=JSON')
         .with(headers: {
                 'Accept' => '*/*'
@@ -39,13 +37,7 @@ RSpec.describe Restashop do
     end
 
     it 'count resource IDs' do
-      stub_request(:get, 'http://prestashop.com/api?output_format=JSON')
-        .with(headers: {
-                'Accept' => '*/*'
-              })
-        .to_return(status: 200,
-                   body: '[ "suppliers" ]', headers: {})
-
+      stub_prestashop_resources
       stub_request(:get, 'http://prestashop.com/api/suppliers?output_format=JSON')
         .with(headers: {
                 'Accept' => '*/*'
@@ -61,13 +53,7 @@ RSpec.describe Restashop do
     end
 
     it 'returns all resource items in a row' do
-      stub_request(:get, 'http://prestashop.com/api?output_format=JSON')
-        .with(headers: {
-                'Accept' => '*/*'
-              })
-        .to_return(status: 200,
-                   body: '[ "suppliers" ]', headers: {})
-
+      stub_prestashop_resources
       stub_request(:get, 'http://prestashop.com/api/suppliers?display=full&output_format=JSON')
         .with(headers: {
                 'Accept' => '*/*'
@@ -89,12 +75,7 @@ RSpec.describe Restashop do
     end
 
     it 'find a resource using ID' do
-      stub_request(:get, 'http://prestashop.com/api?output_format=JSON')
-        .with(headers: {
-                'Accept' => '*/*'
-              })
-        .to_return(status: 200, body: '[ "suppliers" ]', headers: {})
-
+      stub_prestashop_resources
       stub_request(:get, 'http://prestashop.com/api/suppliers/42?output_format=JSON')
         .with(headers: {
                 'Accept' => '*/*'
@@ -110,12 +91,7 @@ RSpec.describe Restashop do
     end
 
     it 'show a resource keys' do
-      stub_request(:get, 'http://prestashop.com/api?output_format=JSON')
-        .with(headers: {
-                'Accept' => '*/*'
-              })
-        .to_return(status: 200, body: '[ "suppliers" ]', headers: {})
-
+      stub_prestashop_resources
       stub_request(:get, 'http://prestashop.com/api/suppliers/42?output_format=JSON')
         .with(headers: {
                 'Accept' => '*/*'
