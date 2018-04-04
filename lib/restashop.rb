@@ -22,7 +22,7 @@ class Restashop
 
     def fetch
       json = @api["#{@resource}/#{@id}"]
-             .get(params: { output_format: 'JSON' })
+             .get(params: { io_format: 'JSON' })
              .body
       @content = JSON.parse(json)[singularize(@resource)]
     end
@@ -62,7 +62,7 @@ class Restashop
     end
 
     def list
-      json = @api[@resource].get(params: { output_format: 'JSON' })
+      json = @api[@resource].get(params: { io_format: 'JSON' })
                             .body
       JSON.parse(json)[@resource]
           .map { |i| i['id'] }
@@ -73,7 +73,7 @@ class Restashop
     end
 
     def where(filters)
-      params = { output_format: 'JSON', display: 'full' }
+      params = { io_format: 'JSON', display: 'full' }
       filters.each do |k, v|
         params["filter[#{k}]"] = v
       end
@@ -103,7 +103,7 @@ class Restashop
   end
 
   def resources
-    json = @client.get(params: { output_format: 'JSON' }).body
+    json = @client.get(params: { io_format: 'JSON' }).body
     JSON.parse(json)
   end
 

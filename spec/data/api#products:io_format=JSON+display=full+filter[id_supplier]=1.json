@@ -1,0 +1,1231 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "id_manufacturer": "1",
+      "id_supplier": "1",
+      "id_category_default": "5",
+      "new": null,
+      "cache_default_attribute": "1",
+      "id_default_image": "1",
+      "id_default_combination": "1",
+      "id_tax_rules_group": "1",
+      "position_in_category": "0",
+      "manufacturer_name": "Fashion Manufacturer",
+      "quantity": "0",
+      "type": "simple",
+      "id_shop_default": "1",
+      "reference": "demo_1",
+      "supplier_reference": "",
+      "location": "",
+      "width": "0.000000",
+      "height": "0.000000",
+      "depth": "0.000000",
+      "weight": "0.000000",
+      "quantity_discount": "0",
+      "ean13": "0",
+      "upc": "",
+      "cache_is_pack": "0",
+      "cache_has_attachments": "0",
+      "is_virtual": "0",
+      "on_sale": "0",
+      "online_only": "0",
+      "ecotax": "0.000000",
+      "minimal_quantity": "1",
+      "price": "16.510000",
+      "wholesale_price": "4.950000",
+      "unity": "",
+      "unit_price_ratio": "0.000000",
+      "additional_shipping_cost": "0.00",
+      "customizable": "0",
+      "text_fields": "0",
+      "uploadable_files": "0",
+      "active": "1",
+      "redirect_type": "404",
+      "id_product_redirected": "0",
+      "available_for_order": "1",
+      "available_date": "0000-00-00",
+      "condition": "new",
+      "show_price": "1",
+      "indexed": "1",
+      "visibility": "both",
+      "advanced_stock_management": "0",
+      "date_add": "2018-04-04 11:06:01",
+      "date_upd": "2018-04-04 11:06:01",
+      "pack_stock_type": "3",
+      "meta_description": "",
+      "meta_keywords": "",
+      "meta_title": "",
+      "link_rewrite": "t-shirt-delave-manches-courtes",
+      "name": "T-shirt délavé à manches courtes",
+      "description": "<p>Fashion propose des vêtements de qualité depuis 2010. La marque propose une gamme féminine composée d'élégants vêtements à coordonner et de robes originales et offre désormais une collection complète de prêt-à-porter, regroupant toutes les pièces qu'une femme doit avoir dans sa garde-robe. Fashion se distingue avec des looks à la fois cool, simples et rafraîchissants, alliant élégance et chic, pour un style reconnaissable entre mille. Chacune des magnifiques pièces de la collection est fabriquée avec le plus grand soin en Italie. Fashion enrichit son offre avec une gamme d'accessoires incluant chaussures, chapeaux, ceintures et bien plus encore !</p>",
+      "description_short": "<p>T-shirt délavé à manches courtes et col rond. Matière douce et extensible pour un confort inégalé. Pour un look estival, portez-le avec un chapeau de paille !</p>",
+      "available_now": "En stock",
+      "available_later": "",
+      "associations": {
+        "categories": [
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "4"
+          },
+          {
+            "id": "5"
+          }
+        ],
+        "images": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "4"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "4"
+          },
+          {
+            "id": "5"
+          },
+          {
+            "id": "6"
+          }
+        ],
+        "product_option_values": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "13"
+          },
+          {
+            "id": "14"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          }
+        ],
+        "product_features": [
+          {
+            "id": "5",
+            "id_feature_value": "5"
+          },
+          {
+            "id": "6",
+            "id_feature_value": "11"
+          },
+          {
+            "id": "7",
+            "id_feature_value": "17"
+          }
+        ],
+        "stock_availables": [
+          {
+            "id": "1",
+            "id_product_attribute": "0"
+          },
+          {
+            "id": "8",
+            "id_product_attribute": "1"
+          },
+          {
+            "id": "9",
+            "id_product_attribute": "2"
+          },
+          {
+            "id": "10",
+            "id_product_attribute": "3"
+          },
+          {
+            "id": "11",
+            "id_product_attribute": "4"
+          },
+          {
+            "id": "12",
+            "id_product_attribute": "5"
+          },
+          {
+            "id": "13",
+            "id_product_attribute": "6"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "id_manufacturer": "1",
+      "id_supplier": "1",
+      "id_category_default": "7",
+      "new": null,
+      "cache_default_attribute": "7",
+      "id_default_image": "7",
+      "id_default_combination": "7",
+      "id_tax_rules_group": "1",
+      "position_in_category": "0",
+      "manufacturer_name": "Fashion Manufacturer",
+      "quantity": "0",
+      "type": "simple",
+      "id_shop_default": "1",
+      "reference": "demo_2",
+      "supplier_reference": "",
+      "location": "",
+      "width": "0.000000",
+      "height": "0.000000",
+      "depth": "0.000000",
+      "weight": "0.000000",
+      "quantity_discount": "0",
+      "ean13": "0",
+      "upc": "",
+      "cache_is_pack": "0",
+      "cache_has_attachments": "0",
+      "is_virtual": "0",
+      "on_sale": "0",
+      "online_only": "0",
+      "ecotax": "0.000000",
+      "minimal_quantity": "1",
+      "price": "26.999852",
+      "wholesale_price": "8.100000",
+      "unity": "",
+      "unit_price_ratio": "0.000000",
+      "additional_shipping_cost": "0.00",
+      "customizable": "0",
+      "text_fields": "0",
+      "uploadable_files": "0",
+      "active": "1",
+      "redirect_type": "404",
+      "id_product_redirected": "0",
+      "available_for_order": "1",
+      "available_date": "0000-00-00",
+      "condition": "new",
+      "show_price": "1",
+      "indexed": "1",
+      "visibility": "both",
+      "advanced_stock_management": "0",
+      "date_add": "2018-04-04 11:06:01",
+      "date_upd": "2018-04-04 11:06:01",
+      "pack_stock_type": "3",
+      "meta_description": "",
+      "meta_keywords": "",
+      "meta_title": "",
+      "link_rewrite": "chemisier",
+      "name": "Chemisier",
+      "description": "<p>Fashion propose des vêtements de qualité depuis 2010. La marque propose une gamme féminine composée d'élégants vêtements à coordonner et de robes originales et offre désormais une collection complète de prêt-à-porter, regroupant toutes les pièces qu'une femme doit avoir dans sa garde-robe. Fashion se distingue avec des looks à la fois cool, simples et rafraîchissants, alliant élégance et chic, pour un style reconnaissable entre mille. Chacune des magnifiques pièces de la collection est fabriquée avec le plus grand soin en Italie. Fashion enrichit son offre avec une gamme d'accessoires incluant chaussures, chapeaux, ceintures et bien plus encore !</p>",
+      "description_short": "<p>Chemisier à manches courtes drapées, pour un style féminin et élégant.</p>",
+      "available_now": "En stock",
+      "available_later": "",
+      "associations": {
+        "categories": [
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "4"
+          },
+          {
+            "id": "7"
+          }
+        ],
+        "images": [
+          {
+            "id": "5"
+          },
+          {
+            "id": "6"
+          },
+          {
+            "id": "7"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "7"
+          },
+          {
+            "id": "8"
+          },
+          {
+            "id": "9"
+          },
+          {
+            "id": "10"
+          },
+          {
+            "id": "11"
+          },
+          {
+            "id": "12"
+          }
+        ],
+        "product_option_values": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "11"
+          },
+          {
+            "id": "8"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          }
+        ],
+        "product_features": [
+          {
+            "id": "5",
+            "id_feature_value": "5"
+          },
+          {
+            "id": "6",
+            "id_feature_value": "11"
+          },
+          {
+            "id": "7",
+            "id_feature_value": "17"
+          }
+        ],
+        "stock_availables": [
+          {
+            "id": "2",
+            "id_product_attribute": "0"
+          },
+          {
+            "id": "14",
+            "id_product_attribute": "7"
+          },
+          {
+            "id": "15",
+            "id_product_attribute": "8"
+          },
+          {
+            "id": "16",
+            "id_product_attribute": "9"
+          },
+          {
+            "id": "17",
+            "id_product_attribute": "10"
+          },
+          {
+            "id": "18",
+            "id_product_attribute": "11"
+          },
+          {
+            "id": "19",
+            "id_product_attribute": "12"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "id_manufacturer": "1",
+      "id_supplier": "1",
+      "id_category_default": "9",
+      "new": null,
+      "cache_default_attribute": "13",
+      "id_default_image": "8",
+      "id_default_combination": "13",
+      "id_tax_rules_group": "1",
+      "position_in_category": "0",
+      "manufacturer_name": "Fashion Manufacturer",
+      "quantity": "0",
+      "type": "simple",
+      "id_shop_default": "1",
+      "reference": "demo_3",
+      "supplier_reference": "",
+      "location": "",
+      "width": "0.000000",
+      "height": "0.000000",
+      "depth": "0.000000",
+      "weight": "0.000000",
+      "quantity_discount": "0",
+      "ean13": "0",
+      "upc": "",
+      "cache_is_pack": "0",
+      "cache_has_attachments": "0",
+      "is_virtual": "0",
+      "on_sale": "0",
+      "online_only": "0",
+      "ecotax": "0.000000",
+      "minimal_quantity": "1",
+      "price": "25.999852",
+      "wholesale_price": "7.800000",
+      "unity": "",
+      "unit_price_ratio": "0.000000",
+      "additional_shipping_cost": "0.00",
+      "customizable": "0",
+      "text_fields": "0",
+      "uploadable_files": "0",
+      "active": "1",
+      "redirect_type": "404",
+      "id_product_redirected": "0",
+      "available_for_order": "1",
+      "available_date": "0000-00-00",
+      "condition": "new",
+      "show_price": "1",
+      "indexed": "1",
+      "visibility": "both",
+      "advanced_stock_management": "0",
+      "date_add": "2018-04-04 11:06:01",
+      "date_upd": "2018-04-04 11:06:01",
+      "pack_stock_type": "3",
+      "meta_description": "",
+      "meta_keywords": "",
+      "meta_title": "",
+      "link_rewrite": "robe-imprimee",
+      "name": "Robe imprimée",
+      "description": "<p>Fashion propose des vêtements de qualité depuis 2010. La marque propose une gamme féminine composée d'élégants vêtements à coordonner et de robes originales et offre désormais une collection complète de prêt-à-porter, regroupant toutes les pièces qu'une femme doit avoir dans sa garde-robe. Fashion se distingue avec des looks à la fois cool, simples et rafraîchissants, alliant élégance et chic, pour un style reconnaissable entre mille. Chacune des magnifiques pièces de la collection est fabriquée avec le plus grand soin en Italie. Fashion enrichit son offre avec une gamme d'accessoires incluant chaussures, chapeaux, ceintures et bien plus encore !</p>",
+      "description_short": "<p>Robe imprimée 100 % coton. Haut rayé noir et blanc et bas composé d'une jupe patineuse taille haute.</p>",
+      "available_now": "En stock",
+      "available_later": "",
+      "associations": {
+        "categories": [
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "8"
+          },
+          {
+            "id": "9"
+          }
+        ],
+        "images": [
+          {
+            "id": "8"
+          },
+          {
+            "id": "9"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "13"
+          },
+          {
+            "id": "14"
+          },
+          {
+            "id": "15"
+          }
+        ],
+        "product_option_values": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "13"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          }
+        ],
+        "product_features": [
+          {
+            "id": "5",
+            "id_feature_value": "5"
+          },
+          {
+            "id": "6",
+            "id_feature_value": "13"
+          },
+          {
+            "id": "7",
+            "id_feature_value": "18"
+          }
+        ],
+        "stock_availables": [
+          {
+            "id": "3",
+            "id_product_attribute": "0"
+          },
+          {
+            "id": "20",
+            "id_product_attribute": "13"
+          },
+          {
+            "id": "21",
+            "id_product_attribute": "14"
+          },
+          {
+            "id": "22",
+            "id_product_attribute": "15"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "id_manufacturer": "1",
+      "id_supplier": "1",
+      "id_category_default": "10",
+      "new": null,
+      "cache_default_attribute": "16",
+      "id_default_image": "10",
+      "id_default_combination": "16",
+      "id_tax_rules_group": "1",
+      "position_in_category": "0",
+      "manufacturer_name": "Fashion Manufacturer",
+      "quantity": "0",
+      "type": "simple",
+      "id_shop_default": "1",
+      "reference": "demo_4",
+      "supplier_reference": "",
+      "location": "",
+      "width": "0.000000",
+      "height": "0.000000",
+      "depth": "0.000000",
+      "weight": "0.000000",
+      "quantity_discount": "0",
+      "ean13": "0",
+      "upc": "",
+      "cache_is_pack": "0",
+      "cache_has_attachments": "0",
+      "is_virtual": "0",
+      "on_sale": "0",
+      "online_only": "0",
+      "ecotax": "0.000000",
+      "minimal_quantity": "1",
+      "price": "50.994153",
+      "wholesale_price": "15.300000",
+      "unity": "",
+      "unit_price_ratio": "0.000000",
+      "additional_shipping_cost": "0.00",
+      "customizable": "0",
+      "text_fields": "0",
+      "uploadable_files": "0",
+      "active": "1",
+      "redirect_type": "404",
+      "id_product_redirected": "0",
+      "available_for_order": "1",
+      "available_date": "0000-00-00",
+      "condition": "new",
+      "show_price": "1",
+      "indexed": "1",
+      "visibility": "both",
+      "advanced_stock_management": "0",
+      "date_add": "2018-04-04 11:06:01",
+      "date_upd": "2018-04-04 11:06:01",
+      "pack_stock_type": "3",
+      "meta_description": "",
+      "meta_keywords": "",
+      "meta_title": "",
+      "link_rewrite": "robe-imprimee",
+      "name": "Robe imprimée",
+      "description": "<p>Fashion propose des vêtements de qualité depuis 2010. La marque propose une gamme féminine composée d'élégants vêtements à coordonner et de robes originales et offre désormais une collection complète de prêt-à-porter, regroupant toutes les pièces qu'une femme doit avoir dans sa garde-robe. Fashion se distingue avec des looks à la fois cool, simples et rafraîchissants, alliant élégance et chic, pour un style reconnaissable entre mille. Chacune des magnifiques pièces de la collection est fabriquée avec le plus grand soin en Italie. Fashion enrichit son offre avec une gamme d'accessoires incluant chaussures, chapeaux, ceintures et bien plus encore !</p>",
+      "description_short": "<p>Robe de soirée imprimée à manches droites et volants, avec fine ceinture noire à la taille.</p>",
+      "available_now": "En stock",
+      "available_later": "",
+      "associations": {
+        "categories": [
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "8"
+          },
+          {
+            "id": "10"
+          }
+        ],
+        "images": [
+          {
+            "id": "10"
+          },
+          {
+            "id": "11"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "16"
+          },
+          {
+            "id": "17"
+          },
+          {
+            "id": "18"
+          },
+          {
+            "id": "43"
+          },
+          {
+            "id": "44"
+          },
+          {
+            "id": "45"
+          }
+        ],
+        "product_option_values": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "7"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "24"
+          }
+        ],
+        "product_features": [
+          {
+            "id": "5",
+            "id_feature_value": "3"
+          },
+          {
+            "id": "6",
+            "id_feature_value": "16"
+          },
+          {
+            "id": "7",
+            "id_feature_value": "19"
+          }
+        ],
+        "stock_availables": [
+          {
+            "id": "4",
+            "id_product_attribute": "0"
+          },
+          {
+            "id": "23",
+            "id_product_attribute": "16"
+          },
+          {
+            "id": "24",
+            "id_product_attribute": "17"
+          },
+          {
+            "id": "25",
+            "id_product_attribute": "18"
+          },
+          {
+            "id": "50",
+            "id_product_attribute": "43"
+          },
+          {
+            "id": "51",
+            "id_product_attribute": "44"
+          },
+          {
+            "id": "52",
+            "id_product_attribute": "45"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "id_manufacturer": "1",
+      "id_supplier": "1",
+      "id_category_default": "11",
+      "new": null,
+      "cache_default_attribute": "19",
+      "id_default_image": "12",
+      "id_default_combination": "19",
+      "id_tax_rules_group": "1",
+      "position_in_category": "0",
+      "manufacturer_name": "Fashion Manufacturer",
+      "quantity": "0",
+      "type": "simple",
+      "id_shop_default": "1",
+      "reference": "demo_5",
+      "supplier_reference": "",
+      "location": "",
+      "width": "0.000000",
+      "height": "0.000000",
+      "depth": "0.000000",
+      "weight": "0.000000",
+      "quantity_discount": "0",
+      "ean13": "0",
+      "upc": "",
+      "cache_is_pack": "0",
+      "cache_has_attachments": "0",
+      "is_virtual": "0",
+      "on_sale": "0",
+      "online_only": "0",
+      "ecotax": "0.000000",
+      "minimal_quantity": "1",
+      "price": "30.506321",
+      "wholesale_price": "9.150000",
+      "unity": "",
+      "unit_price_ratio": "0.000000",
+      "additional_shipping_cost": "0.00",
+      "customizable": "0",
+      "text_fields": "0",
+      "uploadable_files": "0",
+      "active": "1",
+      "redirect_type": "404",
+      "id_product_redirected": "0",
+      "available_for_order": "1",
+      "available_date": "0000-00-00",
+      "condition": "new",
+      "show_price": "1",
+      "indexed": "1",
+      "visibility": "both",
+      "advanced_stock_management": "0",
+      "date_add": "2018-04-04 11:06:01",
+      "date_upd": "2018-04-04 11:06:01",
+      "pack_stock_type": "3",
+      "meta_description": "",
+      "meta_keywords": "",
+      "meta_title": "",
+      "link_rewrite": "robe-ete-imprimee",
+      "name": "Robe d'été imprimée",
+      "description": "<p>Fashion propose des vêtements de qualité depuis 2010. La marque propose une gamme féminine composée d'élégants vêtements à coordonner et de robes originales et offre désormais une collection complète de prêt-à-porter, regroupant toutes les pièces qu'une femme doit avoir dans sa garde-robe. Fashion se distingue avec des looks à la fois cool, simples et rafraîchissants, alliant élégance et chic, pour un style reconnaissable entre mille. Chacune des magnifiques pièces de la collection est fabriquée avec le plus grand soin en Italie. Fashion enrichit son offre avec une gamme d'accessoires incluant chaussures, chapeaux, ceintures et bien plus encore !</p>",
+      "description_short": "<p>Longue robe imprimée à fines bretelles réglables. Décolleté en V et armature sous la poitrine. Volants au bas de la robe.</p>",
+      "available_now": "En stock",
+      "available_later": "",
+      "associations": {
+        "categories": [
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "8"
+          },
+          {
+            "id": "11"
+          }
+        ],
+        "images": [
+          {
+            "id": "12"
+          },
+          {
+            "id": "13"
+          },
+          {
+            "id": "14"
+          },
+          {
+            "id": "15"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "19"
+          },
+          {
+            "id": "20"
+          },
+          {
+            "id": "21"
+          },
+          {
+            "id": "22"
+          },
+          {
+            "id": "23"
+          },
+          {
+            "id": "24"
+          },
+          {
+            "id": "25"
+          },
+          {
+            "id": "26"
+          },
+          {
+            "id": "27"
+          },
+          {
+            "id": "28"
+          },
+          {
+            "id": "29"
+          },
+          {
+            "id": "30"
+          }
+        ],
+        "product_option_values": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "16"
+          },
+          {
+            "id": "14"
+          },
+          {
+            "id": "13"
+          },
+          {
+            "id": "11"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          }
+        ],
+        "product_features": [
+          {
+            "id": "5",
+            "id_feature_value": "3"
+          },
+          {
+            "id": "6",
+            "id_feature_value": "11"
+          },
+          {
+            "id": "7",
+            "id_feature_value": "21"
+          }
+        ],
+        "stock_availables": [
+          {
+            "id": "5",
+            "id_product_attribute": "0"
+          },
+          {
+            "id": "26",
+            "id_product_attribute": "19"
+          },
+          {
+            "id": "27",
+            "id_product_attribute": "20"
+          },
+          {
+            "id": "28",
+            "id_product_attribute": "21"
+          },
+          {
+            "id": "29",
+            "id_product_attribute": "22"
+          },
+          {
+            "id": "30",
+            "id_product_attribute": "23"
+          },
+          {
+            "id": "31",
+            "id_product_attribute": "24"
+          },
+          {
+            "id": "32",
+            "id_product_attribute": "25"
+          },
+          {
+            "id": "33",
+            "id_product_attribute": "26"
+          },
+          {
+            "id": "34",
+            "id_product_attribute": "27"
+          },
+          {
+            "id": "35",
+            "id_product_attribute": "28"
+          },
+          {
+            "id": "36",
+            "id_product_attribute": "29"
+          },
+          {
+            "id": "37",
+            "id_product_attribute": "30"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "id_manufacturer": "1",
+      "id_supplier": "1",
+      "id_category_default": "11",
+      "new": null,
+      "cache_default_attribute": "31",
+      "id_default_image": "16",
+      "id_default_combination": "31",
+      "id_tax_rules_group": "1",
+      "position_in_category": "1",
+      "manufacturer_name": "Fashion Manufacturer",
+      "quantity": "0",
+      "type": "simple",
+      "id_shop_default": "1",
+      "reference": "demo_6",
+      "supplier_reference": "",
+      "location": "",
+      "width": "0.000000",
+      "height": "0.000000",
+      "depth": "0.000000",
+      "weight": "0.000000",
+      "quantity_discount": "0",
+      "ean13": "0",
+      "upc": "",
+      "cache_is_pack": "0",
+      "cache_has_attachments": "0",
+      "is_virtual": "0",
+      "on_sale": "0",
+      "online_only": "0",
+      "ecotax": "0.000000",
+      "minimal_quantity": "1",
+      "price": "30.502569",
+      "wholesale_price": "9.150000",
+      "unity": "",
+      "unit_price_ratio": "0.000000",
+      "additional_shipping_cost": "0.00",
+      "customizable": "0",
+      "text_fields": "0",
+      "uploadable_files": "0",
+      "active": "1",
+      "redirect_type": "404",
+      "id_product_redirected": "0",
+      "available_for_order": "1",
+      "available_date": "0000-00-00",
+      "condition": "new",
+      "show_price": "1",
+      "indexed": "1",
+      "visibility": "both",
+      "advanced_stock_management": "0",
+      "date_add": "2018-04-04 11:06:01",
+      "date_upd": "2018-04-04 11:06:01",
+      "pack_stock_type": "3",
+      "meta_description": "",
+      "meta_keywords": "",
+      "meta_title": "",
+      "link_rewrite": "robe-ete-imprimee",
+      "name": "Robe d'été imprimée",
+      "description": "<p>Fashion propose des vêtements de qualité depuis 2010. La marque propose une gamme féminine composée d'élégants vêtements à coordonner et de robes originales et offre désormais une collection complète de prêt-à-porter, regroupant toutes les pièces qu'une femme doit avoir dans sa garde-robe. Fashion se distingue avec des looks à la fois cool, simples et rafraîchissants, alliant élégance et chic, pour un style reconnaissable entre mille. Chacune des magnifiques pièces de la collection est fabriquée avec le plus grand soin en Italie. Fashion enrichit son offre avec une gamme d'accessoires incluant chaussures, chapeaux, ceintures et bien plus encore !</p>",
+      "description_short": "<p>Robe en mousseline sans manches, longueur genoux. Décolleté en V avec élastique sous la poitrine.</p>",
+      "available_now": "En stock",
+      "available_later": "",
+      "associations": {
+        "categories": [
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "8"
+          },
+          {
+            "id": "11"
+          }
+        ],
+        "images": [
+          {
+            "id": "16"
+          },
+          {
+            "id": "17"
+          },
+          {
+            "id": "18"
+          },
+          {
+            "id": "19"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "31"
+          },
+          {
+            "id": "32"
+          },
+          {
+            "id": "33"
+          },
+          {
+            "id": "40"
+          },
+          {
+            "id": "41"
+          },
+          {
+            "id": "42"
+          }
+        ],
+        "product_option_values": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "16"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "8"
+          }
+        ],
+        "product_features": [
+          {
+            "id": "5",
+            "id_feature_value": "1"
+          },
+          {
+            "id": "6",
+            "id_feature_value": "13"
+          },
+          {
+            "id": "7",
+            "id_feature_value": "19"
+          }
+        ],
+        "stock_availables": [
+          {
+            "id": "6",
+            "id_product_attribute": "0"
+          },
+          {
+            "id": "38",
+            "id_product_attribute": "31"
+          },
+          {
+            "id": "39",
+            "id_product_attribute": "32"
+          },
+          {
+            "id": "40",
+            "id_product_attribute": "33"
+          },
+          {
+            "id": "47",
+            "id_product_attribute": "40"
+          },
+          {
+            "id": "48",
+            "id_product_attribute": "41"
+          },
+          {
+            "id": "49",
+            "id_product_attribute": "42"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "id_manufacturer": "1",
+      "id_supplier": "1",
+      "id_category_default": "11",
+      "new": null,
+      "cache_default_attribute": "34",
+      "id_default_image": "20",
+      "id_default_combination": "34",
+      "id_tax_rules_group": "1",
+      "position_in_category": "2",
+      "manufacturer_name": "Fashion Manufacturer",
+      "quantity": "0",
+      "type": "simple",
+      "id_shop_default": "1",
+      "reference": "demo_7",
+      "supplier_reference": "",
+      "location": "",
+      "width": "0.000000",
+      "height": "0.000000",
+      "depth": "0.000000",
+      "weight": "0.000000",
+      "quantity_discount": "0",
+      "ean13": "0",
+      "upc": "",
+      "cache_is_pack": "0",
+      "cache_has_attachments": "0",
+      "is_virtual": "0",
+      "on_sale": "0",
+      "online_only": "0",
+      "ecotax": "0.000000",
+      "minimal_quantity": "1",
+      "price": "20.501236",
+      "wholesale_price": "6.150000",
+      "unity": "",
+      "unit_price_ratio": "0.000000",
+      "additional_shipping_cost": "0.00",
+      "customizable": "0",
+      "text_fields": "0",
+      "uploadable_files": "0",
+      "active": "1",
+      "redirect_type": "404",
+      "id_product_redirected": "0",
+      "available_for_order": "1",
+      "available_date": "0000-00-00",
+      "condition": "new",
+      "show_price": "1",
+      "indexed": "1",
+      "visibility": "both",
+      "advanced_stock_management": "0",
+      "date_add": "2018-04-04 11:06:01",
+      "date_upd": "2018-04-04 11:06:01",
+      "pack_stock_type": "3",
+      "meta_description": "",
+      "meta_keywords": "",
+      "meta_title": "",
+      "link_rewrite": "robe-mousseline-imprimee",
+      "name": "Robe en mousseline imprimée",
+      "description": "<p>Fashion propose des vêtements de qualité depuis 2010. La marque propose une gamme féminine composée d'élégants vêtements à coordonner et de robes originales et offre désormais une collection complète de prêt-à-porter, regroupant toutes les pièces qu'une femme doit avoir dans sa garde-robe. Fashion se distingue avec des looks à la fois cool, simples et rafraîchissants, alliant élégance et chic, pour un style reconnaissable entre mille. Chacune des magnifiques pièces de la collection est fabriquée avec le plus grand soin en Italie. Fashion enrichit son offre avec une gamme d'accessoires incluant chaussures, chapeaux, ceintures et bien plus encore !</p>",
+      "description_short": "<p>Robe en mousseline imprimée à bretelles, longueur genoux. Profond décolleté en V.</p>",
+      "available_now": "En stock",
+      "available_later": "",
+      "associations": {
+        "categories": [
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "8"
+          },
+          {
+            "id": "11"
+          }
+        ],
+        "images": [
+          {
+            "id": "20"
+          },
+          {
+            "id": "21"
+          },
+          {
+            "id": "22"
+          },
+          {
+            "id": "23"
+          }
+        ],
+        "combinations": [
+          {
+            "id": "34"
+          },
+          {
+            "id": "35"
+          },
+          {
+            "id": "36"
+          },
+          {
+            "id": "37"
+          },
+          {
+            "id": "38"
+          },
+          {
+            "id": "39"
+          }
+        ],
+        "product_option_values": [
+          {
+            "id": "1"
+          },
+          {
+            "id": "16"
+          },
+          {
+            "id": "2"
+          },
+          {
+            "id": "3"
+          },
+          {
+            "id": "15"
+          }
+        ],
+        "product_features": [
+          {
+            "id": "5",
+            "id_feature_value": "1"
+          },
+          {
+            "id": "6",
+            "id_feature_value": "13"
+          },
+          {
+            "id": "7",
+            "id_feature_value": "20"
+          }
+        ],
+        "stock_availables": [
+          {
+            "id": "7",
+            "id_product_attribute": "0"
+          },
+          {
+            "id": "41",
+            "id_product_attribute": "34"
+          },
+          {
+            "id": "42",
+            "id_product_attribute": "35"
+          },
+          {
+            "id": "43",
+            "id_product_attribute": "36"
+          },
+          {
+            "id": "44",
+            "id_product_attribute": "37"
+          },
+          {
+            "id": "45",
+            "id_product_attribute": "38"
+          },
+          {
+            "id": "46",
+            "id_product_attribute": "39"
+          }
+        ]
+      }
+    }
+  ]
+}
