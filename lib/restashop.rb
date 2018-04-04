@@ -54,12 +54,7 @@ class Restashop
     end
 
     def all
-      json = @api[@resource].get(params: { output_format: 'JSON',
-                                           display: 'full' })
-                            .body
-      JSON.parse(json)[@resource].map do |r|
-        resource_class.new(@restashop, @resource, r['id'], r)
-      end
+      where({})
     end
 
     def find(id)
@@ -75,6 +70,18 @@ class Restashop
 
     def count
       list.count
+    end
+
+    def where(filters)
+      params = { output_format: 'JSON', display: 'full' }
+      filters.each do |k, v|
+        params["filter[#{k}]"] = v
+      end
+      json = @api[@resource].get(params: params)
+                            .body
+      JSON.parse(json)[@resource].map do |r|
+        resource_class.new(@restashop, @resource, r['id'], r)
+      end
     end
 
     def resource_class

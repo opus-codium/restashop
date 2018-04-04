@@ -32,15 +32,29 @@ def stub_prestashop_supplier_42
   stub_prestashop 'api/suppliers/42?output_format=JSON', json
 end
 
+def stub_prestashop_products
+  json = File.read(File.expand_path('products.json', __dir__))
+  stub_prestashop 'api/products?output_format=JSON&display=full', json
+end
+
+def stub_prestashop_products_with_filter_on_supplier_4
+  json = File.read(File.expand_path('products_supplier_4.json', __dir__))
+  stub_prestashop 'api/products?output_format=JSON&display=full&filter[id_supplier]=4', json
+end
+
 RSpec.describe Restashop do
+  let(:restashop) do
+    Restashop.new(URI.parse('http://prestashop.com/api').to_s,
+                  user: 'XXX')
+  end
+
+  before do
+    stub_prestashop_resources
+  end
+
   context 'with fully working setup' do
-    let(:restashop) do
-      Restashop.new(URI.parse('http://prestashop.com/api').to_s,
-                    user: 'XXX')
-    end
 
     before do
-      stub_prestashop_resources
       stub_prestashop_suppliers
       stub_prestashop_suppliers_full
       stub_prestashop_supplier_42
@@ -76,6 +90,17 @@ RSpec.describe Restashop do
       supplier = restashop.suppliers.find(42)
       expect(supplier.keys).to include 'id'
       expect(supplier.keys).to include 'name'
+    end
+  end
+
+  context 'with representative products catalog' do
+    before do
+      stub_prestashop_products_with_filter_on_supplier_4
+    end
+
+    it 'filters results on `where` call' do
+      products = restashop.products.where(id_supplier: 4)
+      expect(products.count).to eq 175
     end
   end
 end
