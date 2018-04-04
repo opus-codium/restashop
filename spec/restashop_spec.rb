@@ -1,14 +1,6 @@
 require 'restashop'
 
-def stub_prestashop(path, body)
-  stub_request(:get, "http://prestashop.com/#{path}")
-    .with(headers: {
-            'Accept' => '*/*'
-          })
-    .to_return(status: 200, body: body, headers: {})
-end
-
-def stub_prestashop_from_file(path)
+def url_path_to_filename(path)
   file = path.dup
   {
     '/': '#',
@@ -18,7 +10,19 @@ def stub_prestashop_from_file(path)
     file.gsub!(k.to_s, v)
   end
   file += '.json'
-  json = File.read(File.expand_path(File.join('data', file), __dir__))
+end
+
+def stub_prestashop(path, body)
+  stub_request(:get, "http://prestashop.com/#{path}")
+    .with(headers: {
+            'Accept' => '*/*',
+          })
+    .to_return(status: 200, body: body, headers: {})
+end
+
+def stub_prestashop_from_file(path)
+  file = File.join('data', url_path_to_filename(path))
+  json = File.read(File.expand_path(file, __dir__))
   stub_prestashop(path, json)
 end
 
