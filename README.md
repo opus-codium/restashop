@@ -55,6 +55,12 @@ first_order = restashop.orders.find first_order_id
 first_order.total_paid
 ```
 
+### Filter results (e.g. products from supplier)
+
+```ruby
+restashop.products.where(id_supplier: 42)
+```
+
 ## Tests
 
 ```
