@@ -85,7 +85,7 @@ class Restashop
     end
 
     def resource_class
-      constantize(singularize(@resource.capitalize))
+      constantize("Restashop::#{singularize(@resource.capitalize)}")
     end
   end
 
@@ -97,7 +97,7 @@ class Restashop
       define_singleton_method r.to_sym do
         create_resource_class(singularize(r.capitalize))
         create_resource_collection_class(r.capitalize)
-        constantize(r.capitalize).new(self, r)
+        constantize("Restashop::#{r.capitalize}").new(self, r)
       end
     end
   end
@@ -108,10 +108,10 @@ class Restashop
   end
 
   def find_or_create_class(klass, superklass)
-    if Object.const_defined?(klass)
-      Object.const_get(klass)
+    if Restashop.const_defined?(klass)
+      Restashop.const_get(klass)
     else
-      Object.const_set(klass, Class.new(superklass))
+      Restashop.const_set(klass, Class.new(superklass))
     end
   end
 
