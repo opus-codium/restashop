@@ -54,6 +54,10 @@ def stub_prestashop_products
 end
 
 RSpec.describe Restashop do
+  it 'has a version number' do
+    expect(Restashop::VERSION).not_to be nil
+  end
+
   let(:restashop) do
     Restashop.new(URI.parse('http://prestashop.com/api').to_s,
                   user: 'XXX')
