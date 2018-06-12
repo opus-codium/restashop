@@ -1,4 +1,11 @@
-*.gem
-.bundle/
+.rspec_status
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/vendor/
 Gemfile.lock
-vendor/bundle
