@@ -40,8 +40,8 @@ class Restashop
   end
 
   def find_or_create_class(klass, superklass)
-    if Restashop.const_defined?(klass)
-      Restashop.const_get(klass)
+    if Restashop.const_defined?(klass, false)
+      Restashop.const_get(klass, false)
     else
       Restashop.const_set(klass, Class.new(superklass))
     end
