@@ -69,7 +69,6 @@ RSpec.describe Restashop do
 
   context 'with fully working setup' do
     it 'fetch resources and provide associated Restashop::ResourceCollection' do
-      expect(restashop.resources).to include 'shops'
       expect(restashop.shops).to be_instance_of Restashop::Shops
     end
   end
@@ -112,10 +111,12 @@ RSpec.describe Restashop::ResourceCollection do
     end
 
     it 'returns all resource items in a row' do
-      suppliers = restashop.suppliers.all
-      expect(suppliers).to be_instance_of Array
-      expect(suppliers.count).to eq 3
-      expect(suppliers[0]).to be_instance_of Restashop::Supplier
+      suppliers = restashop.suppliers
+      suppliers_all = suppliers.all
+      expect(suppliers).to be_instance_of Restashop::Suppliers
+      expect(suppliers_all).to be_instance_of Array
+      expect(suppliers_all.count).to eq 3
+      expect(suppliers_all.first).to be_instance_of Restashop::Supplier
     end
 
     it 'find a resource using ID' do

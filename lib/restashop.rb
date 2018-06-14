@@ -14,18 +14,29 @@ class Restashop
     @url = url
     @key = key
     @client = RestClient::Resource.new url, user: key, password: ''
-    resources.each do |r|
-      define_singleton_method r.to_sym do
-        create_resource_class(singularize(r.capitalize))
-        create_resource_collection_class(r.capitalize)
-        constantize("Restashop::#{r.capitalize}").new(self, r)
-      end
-    end
+
+    register_resources_methods
   end
+
+  private
 
   def resources
     json = @client.get(params: { io_format: 'JSON' }).body
     JSON.parse(json)
+  end
+
+  def register_resources_methods
+    resources.each do |r|
+      define_singleton_method r.to_sym do
+        resource_class_name = singularize(r.capitalize)
+        resource_collection_class_name = r.capitalize
+
+        create_resource_class(resource_class_name)
+        create_resource_collection_class(resource_collection_class_name)
+
+        constantize("Restashop::#{resource_collection_class_name}").new(self, r)
+      end
+    end
   end
 
   def find_or_create_class(klass, superklass)
